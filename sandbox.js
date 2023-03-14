@@ -65,3 +65,45 @@
 
 //ADDING & REMOVING CLASSES
 
+// const content = document.querySelector("p");
+
+// console.log(content.classList);
+// content.classList.add("error");
+// content.classList.remove("error");
+// content.classList.add("success");
+
+// const errors = document.querySelectorAll("p");
+
+// errors.forEach(errors =>{
+//     if(errors.textContent.includes("error")){
+//         errors.classList.add("error");
+//     };
+
+//     if(errors.textContent.includes("success")){
+//         errors.classList.add("success");
+//     };
+// });
+
+// const title = document.querySelector(".title");
+
+// title.classList.toggle("test");
+// title.classList.toggle("test");
+
+//PARENTS, CHILDREN & SIBLINGS
+
+// const article = document.querySelector("article");
+// // console.log(article.children);
+// // console.log(Array.from(article.children));
+
+// Array.from(article.children).forEach(child => {
+//     child.classList.add("article-element");
+// });
+
+const title = document.querySelector("h2");
+
+console.log(title.parentElement);
+console.log(title.parentElement.parentElement);
+console.log(title.nextElementSibling);
+console.log(title.previousElementSibling);
+
+console.log(title.nextElementSibling.parentElement.children);
